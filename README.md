@@ -10,7 +10,6 @@ The projects included in this repository are those which I completed as part of 
 <p><b>Concepts covered:</b> Python fundamentals (variables, control flow, lists, loops, etc.) </p>
 
 ## Upcoming Projects:
-### Frida Kahlo Cumulative Project
 ### Life Expectancy and GDP
 <p><b>Programing language:</b> Python, Pandas </p>
 <p><b>Concepts covered: </b> Pandas, exploratory data analysis, statistics fundamentals (probability, sampling, inferential statitics, hypothesis testing, etc.), data visualization</p>

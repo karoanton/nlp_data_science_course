@@ -65,6 +65,18 @@ print(patient_region)
 print(patient_charges)
 
 
+# All of the lists contain strings. The lists 'patient_age', 'patient_bmi', 'num_of_children', and 'patient_charges'
+# must be transformed into integers.
+for i in range(len(patient_age)):
+    patient_age[i] = float(patient_age[i])
+for i in range(len(patient_bmi)):
+    patient_bmi[i] = float(patient_bmi[i])
+for i in range(len(num_of_children)):
+    num_of_children[i] = float(num_of_children[i])
+for i in range(len(patient_charges)):
+    patient_charges[i] = float(patient_charges[i])
+
+
 # Which area has the most patients?
 # Create dictionary where each unique region is the key and the number of patients in that region is the value
 def patient_counter(lst):
@@ -101,7 +113,6 @@ print(region_most_patients)
 # zip patient_smoker and patient_age together
 smoker_ages = list(zip(smoker_vs_non_smoker, patient_age))
 smoker_ages_list = [list(x) for x in smoker_ages]
-print(smoker_ages_list)
 
 
 # Then take the values of that list and return the average
@@ -115,9 +126,9 @@ for nested in smoker_ages_list:
 
 
 for num in range(len(yes_smoker_ages)):
-    yes_smoker_ages[num] = int(yes_smoker_ages[num])
+    yes_smoker_ages[num] = yes_smoker_ages[num]
 for num in range(len(non_smoker_ages)):
-    non_smoker_ages[num] = int(non_smoker_ages[num])
+    non_smoker_ages[num] = non_smoker_ages[num]
 
 
 smoker_avg = round(sum(yes_smoker_ages) / len(yes_smoker_ages), 2)
@@ -126,7 +137,48 @@ print("The average age of patients who smoke is " + str(smoker_avg))
 print("The average age of patients who do not smoke is " + str(non_smoker_avg))
 
 
-# What is the average cost for each number of children a person may or may not have?
-cost_of_children = list(zip(num_of_children, patient_charges))
-cost_of_children_list = [list(x) for x in cost_of_children]
-print(cost_of_children_list)
+# What is the average cost for each number of children a person may have?
+# What are the unique numbers of children among patients in the dataset?
+print(list(set(num_of_children)))
+
+
+# Each patient has between 0 and 5 children (all-inclusive)
+# Iterate through num_of_children and patient_charges to create list of charges per number of children
+zero_children_cost = []
+one_child_cost = []
+two_children_cost = []
+three_children_cost = []
+four_children_cost = []
+five_children_cost = []
+
+
+for i in range(len(num_of_children)):
+    for i in range(len(patient_charges)):
+        if num_of_children[i] == 0:
+            zero_children_cost.append(patient_charges[i])
+        if num_of_children[i] == 1:
+            one_child_cost.append(patient_charges[i])
+        if num_of_children[i] == 2:
+            two_children_cost.append(patient_charges[i])
+        if num_of_children[i] == 3:
+            three_children_cost.append(patient_charges[i])
+        if num_of_children[i] == 4:
+            four_children_cost.append(patient_charges[i])
+        if num_of_children[i] == 5:
+            five_children_cost.append(patient_charges[i])
+
+
+zero_children_cost_avg = round(sum(zero_children_cost) / len(zero_children_cost), 2)
+one_child_cost_avg = round(sum(one_child_cost) / len(one_child_cost), 2)
+two_children_cost_avg = round(sum(two_children_cost) / len(two_children_cost), 2)
+three_children_cost_avg = round(sum(three_children_cost) / len(three_children_cost), 2)
+four_children_cost_avg = round(sum(four_children_cost) / len(four_children_cost), 2)
+five_children_cost_avg = round(sum(five_children_cost) / len(five_children_cost), 2)
+
+
+print("The average insurance charge for patients with no children is $" + str(zero_children_cost_avg) + ".")
+print("The average insurance charge for patients with one child is $" + str(one_child_cost_avg) + ".")
+print("The average insurance charge for patients with two children is $" + str(two_children_cost_avg) + ".")
+print("The average insurance charge for patients with three children is $" + str(three_children_cost_avg) + ".")
+print("The average insurance charge for patients with four children is $" + str(four_children_cost_avg) + ".")
+print("The average insurance charge for patients with five children is $" + str(five_children_cost_avg) + ".")

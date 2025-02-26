@@ -11,13 +11,15 @@ The projects included in this repository are those which I completed as part of 
 <p><b>Concepts covered: </b> Functions, lists, for loops, strings, dictionaries, and files.</p>
 
 ## Ongoing Projects:
-TBA
-
-## Upcoming Projects:
 ### Life Expectancy and GDP
 <p><b>Programing language:</b> Python </p>
+<p><b>Libraries used:</b> </p>
+<p><b>Start date: </b> February 26, 2025 </p>
+<p><b>End date: </b></p>
+<p><b>Description: </b> Using the <i>all_data.csv</i> file provided, I conducted a data analysis of GDP and life expectancy from the World Health Organization (WHO) and the World Bank.
 <p><b>Concepts covered: </b> Pandas, exploratory data analysis, statistics fundamentals (probability, sampling, inferential statitics, hypothesis testing, etc.), data visualization</p>
 
+## Upcoming Projects:
 ### Biodiversity in National Parks
 ### OKCupid Date-A-Scientist
 ### Text Message Analysis

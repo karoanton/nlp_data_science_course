@@ -28,8 +28,8 @@ df = pd.read_csv('all_data.csv')
 Research Questions:
 1.1. How has life expectancy changed over time among the 6 nations featured in the data?
 1.2. How has GDP changed over time among the 6 nations featured in the data?
-2.1. In a given year, what country has had the greatest life expectancy?
-2.2. In a given year, what country has had the highest GDP?
+2.1. What is the difference in life expectancy in 2000 vs. 2015 for each country?
+2.2. What is the difference in GDP in 2000 vs. 2015 for each country?
 3. Is there any correlation between GDP and life expectancy?
 4. 
 """
@@ -63,7 +63,6 @@ plt.xlabel("Year")
 plt.ylabel("Life expectancy at birth")
 plt.legend(countries, loc=6)
 plt.show()
-plt.clf()
 
 #1.2 How has GDP changed over time among the 6 nations featured in the data?
 plt.plot(chile['Year'], chile['GDP'])
@@ -72,9 +71,15 @@ plt.plot(germany['Year'], germany['GDP'])
 plt.plot(mexico['Year'], mexico['GDP'])
 plt.plot(usa['Year'], usa['GDP'])
 plt.plot(zimbabwe['Year'], zimbabwe['GDP'])
-plt.title("GDP by year (2000-2015")
+plt.title("GDP by year (2000-2015)")
 plt.xlabel("Year")
 plt.ylabel("GDP")
 plt.legend(countries, loc=6)
 plt.show()
+
+#2.1 What is the difference in life expectancy in 2000 vs. 2015 for each country?
+chile_life_2000 = chile[chile['Year'] == 2000]
+chile_life_2015 = chile[chile['Year'] == 2015]
+chile_life_diff = chile_life_2015['Life expectancy at birth(years)'] - chile_life_2000['Life expectancy at birth(years)']
+print(chile_life_diff)
 plt.clf()

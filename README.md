@@ -10,16 +10,23 @@ The projects included in this repository are those which I completed as part of 
 <p><b>Description: </b> Using the <i>insurance.csv</i> file provided, I conducted a data analysis of U.S. medical insurance costs featuring the following variables: age, sex, BMI, number of children, whether or not the patient smokes, region, and insurance charges.</p>
 <p><b>Concepts covered: </b> Functions, lists, for loops, strings, dictionaries, and files.</p>
 
-## Ongoing Projects:
 ### Life Expectancy and GDP
 <p><b>Programing language:</b> Python </p>
 <p><b>Libraries used:</b> Pandas, Matplotlib, seaborn</p>
 <p><b>Start date: </b> February 26, 2025 </p>
-<p><b>End date: </b></p>
+<p><b>End date: </b> March 12, 2025 </p>
 <p><b>Description: </b> Using the <i>all_data.csv</i> file provided, I conducted a data analysis of GDP and life expectancy from the World Health Organization (WHO) and the World Bank.
 <p><b>Concepts covered: </b> Pandas, exploratory data analysis, statistics fundamentals (probability, sampling, inferential statitics, hypothesis testing, etc.), data visualization</p>
 
-## Upcoming Projects:
+## Ongoing Projects:
 ### Biodiversity in National Parks
+<p><b>Programing language: </b> Python </p>
+<p><b>Libraries used: </b></p>
+<p><b>Start date: </b> March 13, 2025 </p>
+<p><b>End date: </b></p>
+<p><b>Description: </b></p>
+<p><b>Concepts covered: </b> </p>
+
+## Upcoming Projects:
 ### OKCupid Date-A-Scientist
 ### Text Message Analysis

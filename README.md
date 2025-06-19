@@ -33,5 +33,7 @@ The projects included in this repository are those which I completed as part of 
 <p><b>Start date:</b> May 26, 2025</p>
 <p><b>End date:</b> TBD</p>
 <p><b>Description:</b> Using the <i>profiles.csv</i> file provided, I built a machine learning classification model to predict the diets of dating profile users where that information is missing from the database. This is done using a decision tree model based on the religion, education, and body types of users.</p>
+
 ## Upcoming Projects:
+
 ### Text Message Analysis

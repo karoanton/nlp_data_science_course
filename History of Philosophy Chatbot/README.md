@@ -10,4 +10,7 @@ A generative chatbot built using the History of Philosphy dataset available on K
 
 **LinkedIn Account:** [Karoline Antonsen](www.linkedin.com/in/karoline-antonsen-63479bb3)
 
+---
+**Start Date:** September 9, 2025
 
+**Completion Date:** _TBD_
